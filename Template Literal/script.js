@@ -65,23 +65,56 @@
 
 // Nested
 
-const siswa = {
-  nama: "Paul Mahardika",
-  mapel: ["PWPB", "Basis Data", "PBO", "PKK"],
-};
+// const siswa = {
+//   nama: "Paul Mahardika",
+//   mapel: ["PWPB", "Basis Data", "PBO", "PKK"],
+// };
 
-function showMapel(mapel) {
-  return `
-        <ol>
-            ${mapel.map((mp) => `<li>${mp}</li>`).join("")}
-        </ol>
-    `;
+// function showMapel(mapel) {
+//   return `
+//         <ol>
+//             ${mapel.map((mp) => `<li>${mp}</li>`).join("")}
+//         </ol>
+//     `;
+// }
+
+// const el = `<div class=siswa>
+//     <h2>${siswa.nama}</h2>
+//     <h4>Mata Pelajaran : </h4>
+//     ${showMapel(siswa.mapel)}
+// </div>`;
+
+// document.body.innerHTML = el;
+// ==========================================
+// Tagged Template
+
+// const nama = "Paul Mahardika";
+// const umur = 17;
+
+// function coba(strings, ...values) {
+//   // let results = "";
+//   // strings.forEach((str, i) => {
+//   //   results += `${str}${values[i] || ""}`;
+//   // });
+//   // return results;
+
+//   return strings.reduce((result, str, i) => `${result}${str}${values[i] || ""}`, "");
+// }
+
+// const str = coba`Halo nama saya ${nama}, Saya ${umur} tahun.`;
+// console.log(str);
+
+// Higlhight
+const nama = "Paul Mahardika";
+const umur = 17;
+const email = "pmsp3108@gmail.com";
+
+function highlight(strings, ...values) {
+  return strings.reduce((result, str, i) => `${result}${str}<span class='hl'>${values[i] || ""}</span>`, "");
 }
 
-const el = `<div class=siswa>
-    <h2>${siswa.nama}</h2>
-    <h4>Mata Pelajaran : </h4>
-    ${showMapel(siswa.mapel)}
-</div>`;
-
-document.body.innerHTML = el;
+const str = highlight`Halo nama saya ${nama}, Saya ${umur} tahun. ${email}`;
+document.body.innerHTML = str;
+// result mengeluarkan isi str
+// str mengeluarkan string dalam result (Halo nama saya, saya, tahun) dan dijadikan array.
+// values mengeluarkan expression dalam result (${nama}, ${umur})
