@@ -1,0 +1,37 @@
+[
+  {
+    "nama": "Paul Mahardika",
+    "nis": "19008532",
+    "email": "paulusputro@smkn2-solo.net",
+    "jurusan": "rekayasa pemrograman lunak",
+    "id": 1
+  },
+  {
+    "nama": "Saka Pamarta",
+    "nis": "19008523",
+    "email": "hermanpamarta@smkn2-solo.net",
+    "jurusan": "rekayasa pemrograman lunak",
+    "id": 2
+  },
+  {
+    "nama": "Charles Ricky",
+    "nis": "1900820",
+    "email": "charlesbarnabas@smkn2-solo.net",
+    "jurusan": "rekayasa pemrograman lunak",
+    "id": 3
+  },
+  {
+    "nama": "Robert Arya",
+    "nis": "19008537",
+    "email": "robertusprasetyo@smkn2-solo.net",
+    "jurusan": "rekayasa pemrograman lunak",
+    "id": 4
+  },
+  {
+    "nama": "Satria Putra",
+    "nis": "19008539",
+    "email": "satriakurniawan@smkn2-solo.net",
+    "jurusan": "rekayasa pemrograman lunak",
+    "id": 5
+  }
+]
